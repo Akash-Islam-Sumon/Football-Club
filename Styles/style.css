@@ -1,10 +1,23 @@
+/*<-------------------------------------------------------
+      --From Font Awosome google font popins 700 used for all body-
+    -----------------------------------------------------------> */
+
 body {
     font-family: 'Poppins', sans-serif;
 }
 
+
+/* <-------------------------------------
+    --- - Top Section in this web site------
+    --------------------------------------> */
+
 .top-section {
     display: flex;
-    background-color: royalblue;
+    background-color: rgb(136, 162, 240);
+}
+
+.top-section:hover button {
+    background-image: linear-gradient(red, Gold, violet);
 }
 
 .half-width {
@@ -14,10 +27,13 @@ body {
 .title {
     width: 485px;
     Height: 230px;
-    font-size: 64px;
+    font-size: 62px;
     margin: 207px 0px 27px 156px;
     line-height: 80px;
 }
+
+
+/*<---Watch live button --> */
 
 button {
     margin-left: 156px;
@@ -26,7 +42,11 @@ button {
     width: 168px;
     height: 44px;
     background-color: #E02C6D;
-    ;
+    color: whitesmoke;
+}
+
+button:hover {
+    background-color: rgb(247, 47, 237);
 }
 
 .half-width img {
@@ -38,8 +58,8 @@ button {
 
 
 /* ------------------------------
---players information section----
-------------------------------- */
+    --players information section----
+    ------------------------------- */
 
 .players {
     margin: 85px 100px 150px 80px;
@@ -77,11 +97,58 @@ button {
     margin-top: 10px
 }
 
+
+/*------------------------------------
+    ------- Highlight sectio------------
+    ------------------------------------ */
+
 .hilight {
-    background-color: rgb(122, 142, 231);
+    background-color: rgb(143, 187, 245);
 }
 
-.social-icon {
+.HR {
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    box-shadow: blanchedalmond;
+}
+
+
+/*-------------------------------------
+    ------- Sponsor part------------------
+    -------------------------------------> */
+
+.sponsor-partnar>.Area {
+    height: 400px;
+    background-color: rgb(143, 187, 245);
+    text-align: center;
+}
+
+.Area>img {
+    padding: 90px;
+    height: 60px;
+    width: 100px;
+}
+
+
+/*-----Club info-- */
+
+.club-info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: rgb(143, 187, 245);
+}
+
+.heading {
+    margin-left: 36px;
+}
+
+
+/*======================================
+ ---- social icon in this section-------
+ ======================================= */
+
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,13 +158,200 @@ button {
     justify-content: center;
     width: 484px;
     height: 110px;
+    margin-left: -100px;
 }
 
-.icon img {
+.social-icon img {
     width: 32px;
     height: 32px;
 }
 
+
+/*-------------Icon lists--- ----- */
+
+.Dribble {
+    background-color: orange;
+}
+
+.instragram {
+    background-color: orchid;
+}
+
 .youtube {
     background-color: red;
+}
+
+.twiter {
+    background: rgb(94, 94, 241);
+}
+
+.copy-right {
+    margin-left: -40px;
+}
+
+
+/* --------------------------------------
+   - ----Media Queries for mobbile--(Max-688)
+    ---------------------------------------*/
+
+@media only screen and (max-width:688px) {
+    .top-section {
+        background-color: rgb(111, 160, 233);
+    }
+    .top-section:hover button {
+        background-image: linear-gradient(red, Gold, violet);
+    }
+    .title {
+        width: 440px;
+        Height: 214px;
+        font-size: 45px;
+        margin: 29px 0px -60px 45px;
+        line-height: 60px;
+    }
+    .half-width {
+        display: flex;
+        flex-direction: column;
+    }
+    button {
+        margin-left: 50px;
+        margin-top: 5px;
+    }
+    .half-width img {
+        margin-top: 270px;
+        margin-left: -140px;
+        width: 330.01px;
+        height: 260px;
+    }
+    .players {
+        margin: 36px 18px 36px 18px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 26px;
+        background-color: gainsboro;
+    }
+    .player img {
+        width: 300px;
+        height: 256px;
+        padding: 16px 0px 0px 15px;
+    }
+    .title {
+        width: 384px;
+        Height: 215px;
+        font-size: 39px;
+        margin: 5px 0px -60px 18px;
+        line-height: 58px;
+    }
+    /*--- highlight theme image-- */
+    .half-width img {
+        margin-top: 237px;
+        margin-left: -197px;
+        width: 394px;
+        height: 270px;
+    }
+    .Area>img {
+        padding: 40px;
+        height: 60px;
+        width: 100px;
+    }
+    .club-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: rgba(121, 165, 212, 0.966);
+    }
+    .uniq-info {
+        font-weight: bold;
+    }
+    .logo img {
+        justify-content: center;
+        width: 350px;
+        height: 130px;
+        margin-left: 0px;
+    }
+    .copy-right {
+        font-weight: 700;
+    }
+}
+
+
+/*-----------------------------------------
+------------Media queroes for tablet---------
+-------------------------------------------> */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .top-section {
+        background-color: rgb(111, 160, 233);
+    }
+    .top-section:hover button {
+        background-image: linear-gradient(red, Gold, violet);
+    }
+    .title {
+        width: 440px;
+        Height: 214px;
+        font-size: 45px;
+        margin: 29px 0px -60px 45px;
+        line-height: 60px;
+    }
+    .half-width {
+        display: flex;
+        flex-direction: column;
+    }
+    button {
+        margin-left: 50px;
+        margin-top: 5px;
+    }
+    .half-width img {
+        margin-top: 270px;
+        margin-left: -140px;
+        width: 330.01px;
+        height: 260px;
+    }
+    .players {
+        margin: 36px 0px 36px 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 36px;
+        background-color: gainsboro;
+    }
+    .player img {
+        width: 300px;
+        height: 256px;
+        padding: 16px 0px 0px 18px;
+    }
+    .title {
+        width: 384px;
+        Height: 215px;
+        font-size: 39px;
+        margin: 5px 0px -60px 18px;
+        line-height: 58px;
+    }
+    /*--- highlight theme image-- */
+    .half-width img {
+        margin-top: 250px;
+        margin-left: -318px;
+        margin-bottom: 50px;
+        width: 632px;
+        height: 320px;
+    }
+    .Area>img {
+        padding: 40px;
+        height: 60px;
+        width: 100px;
+    }
+    .club-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: rgba(121, 165, 212, 0.966);
+    }
+    .uniq-info {
+        font-weight: bold;
+    }
+    .logo img {
+        justify-content: center;
+        width: 350px;
+        height: 130px;
+        margin-left: 0px;
+    }
+    .copy-right {
+        font-weight: 700;
+    }
 }
