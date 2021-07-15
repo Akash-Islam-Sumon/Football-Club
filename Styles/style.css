@@ -16,8 +16,11 @@ body {
     background-color: rgb(136, 162, 240);
 }
 
-.main-container:hover button {
-    background-image: linear-gradient(red, Gold, violet);
+.main-container:hover img {
+    transform: scale(1.1) rotate(350deg);
+    transition: transform 2s;
+    /* animation-iteration-count: infinite; */
+    /* background-image: linear-gradient(red, Gold, violet); */
 }
 
 .half-width {
@@ -52,8 +55,8 @@ button:hover {
 .half-width img {
     margin-top: 153px;
     margin-left: 60px;
-    width: 556.01px;
-    height: 438px;
+    width: 546.01px;
+    height: 428px;
 }
 
 
